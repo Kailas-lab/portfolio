@@ -1,0 +1,274 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #f5f5f5;
+  background-color: #121212; /* Dark gray background */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1a1a1a; /* Slightly lighter gray for contrast */
+  color: #f5f5f5;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin: 0 1rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #f5f5f5;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #757575; /* Light gray for hover effect */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Section Animation */
+.hero {
+  height: 30vh; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center; /* Center horizontally */
+  background: linear-gradient(135deg, #333, #000); /* Black gradient */
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 1.5s ease-in-out; /* Add animation */
+}
+
+.hero span {
+  color: #eaee14; /* Accent yellow for the name */
+  animation: fadeIn 1.5s ease-in-out 0.5s; /* Delayed animation */
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background: #444; /* Medium gray button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+  animation: fadeIn 1.5s ease-in-out 1s; /* Further delayed animation */
+}
+.btn:hover {
+  background: #757575;
+  transform: scale(1.05);
+}
+
+
+/* Section Styling */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skill {
+  margin: 0.5rem;
+  padding: 1rem;
+  background: #444; /* Medium gray for skill cards */
+  color: rgb(22, 0, 0);
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.project-card {
+  padding: 1rem;
+  background: #130000; /* Darker gray for project cards */
+  color: white;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styling */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #1a1a1a;
+  color: white;
+}
+form button {
+  padding: 0.8rem 2rem;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+form button:hover {
+  background: #757575;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1a1a1a;
+  color: #757575;
+}
+
+/* Skills and Projects Section */
+.text-black {
+  color: #f8f1f1; /* Black color for text */
+}
+
+#projects h3 {
+  font-weight: bold;
+}
+
+#projects p {
+  color: #ece8e8; /* Ensures all project descriptions are black */
+}
+/* Project Card Styling */
+.project-card {
+  background-color: #f8f9fa; /* Light gray shade */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect for interactivity */
+.project-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 10px rgba(231, 226, 226, 0.15); /* Subtle shadow */
+}
+/* Contact Section Custom Styles */
+#contact .form-control {
+  margin-bottom: 1rem;
+}
+
+/* Social Icon Styling */
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Social Links Button Styling */
+.btn-outline-dark {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.social-links a {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button Hover Effect */
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: white;
+}
+/* Social Icon Styling */
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Button Hover Effect */
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: white;
+}
+/* Experience Section Card Styling */
+.experience-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  color: #555;
+}
+/* Styling for the social media buttons (GitHub, LinkedIn, Email) */
+.social-links .social-btn {
+  width: auto;  /* Makes the width auto-adjust based on content */
+  padding: 8px ;  /* Smaller padding to make the buttons smaller */
+  font-size: 14px;  /* Adjusts font size for a smaller look */
+  border-radius: 30px;  /* Rounded corners */
+}
+
+/* Adjust icon sizes inside buttons */
+.social-icon {
+  font-size: 18px;  /* Smaller icon size */
+}
+
+/* Optional: Adjust button hover effect */
+.social-btn:hover {
+  background-color: #333;
+  color: white;
+}
